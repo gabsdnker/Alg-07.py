@@ -1,21 +1,16 @@
-#BUSCA REVERSA
+#BUSCA REVERSA 
 
-# Escreva uma função chamada buscaReversa, que encontra todas as chaves de um dicionário que estão mapeadas para um determinado valor.
-def buscaReversa (dicionário, valor):
-# A função deve receber como parâmetros um dicionário e um valor para ser buscado no dicionário.
-    for chave in dicionário:
-        lista= []
-        if dicionário[chave] == valor:
-            return lista.append(chave)
-        elif chave == '':
-            return lista
+def buscaReversa(dicionário, chave):
+    valor = []
+    for dicio in dicionário:
+        if dicio == chave:
+            valor.append(dicionário[dicio])    
+    return(valor)
 
-# Escreva uma função main para demonstrar sua função.
 def main():
-# Note que a função deve funcionar independentemente de ela retornar múltiplas chaves, uma única chave, ou nenhuma chave.
-    d= {"G":1, "A":2, "B":3, "R":4, "I":5, "E":6, "L":7, "L":8, "I":9}
-    v= input("Digite um valor: ")
-    print(buscaReversa(d,v))
-
-if __name__=='__main__':
+    d = {1:"g", 2:"a",3:"b",4:"r", 5:"i", 6:"e", 7:"l", 8:"l", 9:"i"}
+    c = int(input("Digite a chave: "))
+    resultado= (buscaReversa(d, c))
+    print(resultado)
+if __name__ == '__main__':
     main()
