@@ -1,6 +1,6 @@
 #ANAGRAMAS
 
-def anagrama(palavraA, palavraB):
+def anagramas(palavraA, palavraB):
     conjuntoA = {""}
     conjuntoB = {""}
     for letra in palavraA:
@@ -17,7 +17,7 @@ def anagrama(palavraA, palavraB):
 def main():
     palavra1 = input("Digite a primeira palavra: ")
     palavra2 = input("Digite a segunda palavra: ")
-    resultado = anagrama(palavra1,palavra2)
+    resultado = anagramas(palavra1,palavra2)
     print(resultado)
 
 if __name__ == '__main__':
